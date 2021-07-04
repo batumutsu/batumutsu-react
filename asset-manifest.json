@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/batumutsu-react/static/css/main.32937532.chunk.css",
-    "main.js": "/batumutsu-react/static/js/main.e83fb587.chunk.js",
-    "main.js.map": "/batumutsu-react/static/js/main.e83fb587.chunk.js.map",
+    "main.css": "/batumutsu-react/static/css/main.fa6b7e40.chunk.css",
+    "main.js": "/batumutsu-react/static/js/main.0449f447.chunk.js",
+    "main.js.map": "/batumutsu-react/static/js/main.0449f447.chunk.js.map",
     "runtime-main.js": "/batumutsu-react/static/js/runtime-main.a2c42dfa.js",
     "runtime-main.js.map": "/batumutsu-react/static/js/runtime-main.a2c42dfa.js.map",
     "static/js/2.8e278429.chunk.js": "/batumutsu-react/static/js/2.8e278429.chunk.js",
     "static/js/2.8e278429.chunk.js.map": "/batumutsu-react/static/js/2.8e278429.chunk.js.map",
     "index.html": "/batumutsu-react/index.html",
-    "static/css/main.32937532.chunk.css.map": "/batumutsu-react/static/css/main.32937532.chunk.css.map",
+    "static/css/main.fa6b7e40.chunk.css.map": "/batumutsu-react/static/css/main.fa6b7e40.chunk.css.map",
     "static/js/2.8e278429.chunk.js.LICENSE.txt": "/batumutsu-react/static/js/2.8e278429.chunk.js.LICENSE.txt",
     "static/media/loading.04d9652c.gif": "/batumutsu-react/static/media/loading.04d9652c.gif",
     "static/media/search_ideogram.e979e3c4.svg": "/batumutsu-react/static/media/search_ideogram.e979e3c4.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.a2c42dfa.js",
     "static/js/2.8e278429.chunk.js",
-    "static/css/main.32937532.chunk.css",
-    "static/js/main.e83fb587.chunk.js"
+    "static/css/main.fa6b7e40.chunk.css",
+    "static/js/main.0449f447.chunk.js"
   ]
 }
