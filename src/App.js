@@ -15,8 +15,8 @@ class Search extends Component {
     }
   }
 
- mySubmitHandler = async (event) => {
- 	event.preventDefault();
+ mySubmitHandler = async (e) => {
+ 	e.preventDefault();
     this.setState({ isLoading: true })
     if(this.state.albumId === '' || (!Number(this.state.albumId) && this.state.albumId !== 0)){
     	this.setState({ isLoading: false, isError: true, errMsg:'Album Id should be a number' })    	
@@ -41,42 +41,42 @@ class Search extends Component {
     })
   }
 
-  myChangeHandler = (event) => {
-    this.setState({albumId: event.target.value});
+  myChangeHandler = (e) => {
+    this.setState({albumId: e.target.value});
   }
 
   render() {
     const { photos, isLoading, isError, errMsg } = this.state
-    let searchBar = <form onSubmit={this.mySubmitHandler} method="#">
+    let searchBar = <form onSubmit={this.mySubmitHandler}>
       	<div className="topnav">
   <div className="search-container">
-      <input type="text" placeholder="enter album id number to fetch its images" name="search" 
-      onChange={this.myChangeHandler} />
+      <input type="number" placeholder="enter album id number to fetch its images" name="search" 
+      onChange={this.myChangeHandler} step="0.1"/>
       <button type="submit">Get Album Photos By Id</button>
   </div>
 </div></form>;
 
     if (isLoading) {
-      return (<div><div>{searchBar}</div> <div className="sectionData"><div className="divImg"><img src={loading} alt="Avatar"/></div><h1>Loading...</h1></div></div>)
+      return (<div> {searchBar} <x-sectiondata><div className="divImg"><img src={loading} alt="Avatar"/></div><h1>Loading...</h1></x-sectiondata></div>)
     }
 
     if (isError) {
-      return ( <div> <div>{searchBar}</div> <div className="sectionData"><div className="divImg"><img src={search} alt="Avatar"/></div><h1>{errMsg}</h1></div></div>)
+      return ( <div> {searchBar} <x-sectiondata><div className="divImg"><img src={search} alt="Avatar"/></div><h1>{errMsg}</h1></x-sectiondata></div>)
     }
 
     return photos.length > 0
       ? (
-      	<div> <div>{searchBar}</div>
-      	<div className="sectionData">
+      	<div> {searchBar}
+      	<x-sectiondata>
             {this.renderImages()}
-         </div>
+         </x-sectiondata>
          </div>
       ) : (
-      <div> <div> {searchBar}</div>
-        <div className="sectionData">
+      <div> {searchBar}
+        <x-sectiondata>
           <div className="divImg"><img src={search} alt="Avatar"/></div>
           <h1>{errMsg}</h1>
-      </div>
+      </x-sectiondata>
       </div>
       )
 

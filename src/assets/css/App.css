@@ -34,7 +34,7 @@ html {
         border-radius: 5px;
       }
 
-      .sectionData {
+      x-sectiondata {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -75,7 +75,7 @@ html {
   padding: 10px 1px;
 }
 
-.topnav input[type=text] {
+.topnav input[type=number] {
   padding: 6px;
   margin-top: 0px;
   margin-left: -590px;
@@ -103,11 +103,20 @@ html {
 .divImg{
   width: 20%;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 @media screen and (max-width: 848px) {
   .topnav .search-container {
     float: none;
   }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
+  .topnav a, .topnav input[type=number], .topnav .search-container button {
     float: none;
     display: block;
     text-align: left;
@@ -115,11 +124,11 @@ html {
     margin: 0;
     padding: 14px;
   }
-  .topnav input[type=text] {
+  .topnav input[type=number] {
     border: 1px solid #ccc;
   }
 
-  .sectionData {
+  x-sectiondata {
   padding-top: 150px;
 }
 article {
