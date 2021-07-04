@@ -57,22 +57,22 @@ class Search extends Component {
 </div></form>;
 
     if (isLoading) {
-      return (<div> {searchBar} <div className="sectionData"><div className="divImg"><img src={loading} alt="Avatar"/></div><h1>Loading...</h1></div></div>)
+      return (<div><div>{searchBar}</div> <div className="sectionData"><div className="divImg"><img src={loading} alt="Avatar"/></div><h1>Loading...</h1></div></div>)
     }
 
     if (isError) {
-      return ( <div> {searchBar} <div className="sectionData"><div className="divImg"><img src={search} alt="Avatar"/></div><h1>{errMsg}</h1></div></div>)
+      return ( <div> <div>{searchBar}</div> <div className="sectionData"><div className="divImg"><img src={search} alt="Avatar"/></div><h1>{errMsg}</h1></div></div>)
     }
 
     return photos.length > 0
       ? (
-      	<div> {searchBar}
+      	<div> <div>{searchBar}</div>
       	<div className="sectionData">
             {this.renderImages()}
          </div>
          </div>
       ) : (
-      <div> {searchBar}
+      <div> <div> {searchBar}</div>
         <div className="sectionData">
           <div className="divImg"><img src={search} alt="Avatar"/></div>
           <h1>{errMsg}</h1>
