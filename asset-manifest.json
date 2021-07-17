@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/batumutsu-react/static/css/main.fa6b7e40.chunk.css",
-    "main.js": "/batumutsu-react/static/js/main.0449f447.chunk.js",
-    "main.js.map": "/batumutsu-react/static/js/main.0449f447.chunk.js.map",
+    "main.js": "/batumutsu-react/static/js/main.27ee85ed.chunk.js",
+    "main.js.map": "/batumutsu-react/static/js/main.27ee85ed.chunk.js.map",
     "runtime-main.js": "/batumutsu-react/static/js/runtime-main.a2c42dfa.js",
     "runtime-main.js.map": "/batumutsu-react/static/js/runtime-main.a2c42dfa.js.map",
     "static/js/2.8e278429.chunk.js": "/batumutsu-react/static/js/2.8e278429.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a2c42dfa.js",
     "static/js/2.8e278429.chunk.js",
     "static/css/main.fa6b7e40.chunk.css",
-    "static/js/main.0449f447.chunk.js"
+    "static/js/main.27ee85ed.chunk.js"
   ]
 }
