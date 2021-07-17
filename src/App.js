@@ -21,13 +21,19 @@ class Search extends Component {
     if(this.state.albumId === '' || (!Number(this.state.albumId) && this.state.albumId !== 0)){
     	this.setState({ isLoading: false, isError: true, errMsg:'Album Id should be a number' })    	
     }else{
-    const response = await fetch(`https://jsonplaceholder.typicode.com/albums/${this.state.albumId}/photos`)
+    	try{
+    //const response = await fetch(`https://jsonplaceholder.typicode.com/albums/${this.state.albumId}/photos`)
+    const response = await fetch(`https://heroku-nelly-springboot.herokuapp.com/${this.state.albumId}`)
     if (response.ok) {
       const photos = await response.json()
       this.setState({ photos, isLoading: false, isError: false, errMsg:`No images found for Album Id: ${this.state.albumId}` })
     } else {
       this.setState({ isError: true, isLoading: false, errMsg:`No images found for Album Id: ${this.state.albumId}` })
-    }}
+    }
+	}catch(e){
+		this.setState({ isError: true, isLoading: false, errMsg:`${e}` })
+	}
+	}
   }
 
   renderImages = () => {
