@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './assets/css/App.css';
 import loading from './assets/images/loading.gif';
 import search from './assets/images/search_ideogram.svg';
+import ScrollButton from './components/ScrollButton';
 
 class Search extends Component {
   constructor(props) {
@@ -76,6 +77,7 @@ class Search extends Component {
       	<x-sectiondata>
             {this.renderImages()}
          </x-sectiondata>
+         <ScrollButton />
          </div>
       ) : (
       <div> {searchBar}
